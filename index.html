@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подарок природы</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header__top" data-js-overlay-container>
+        <div class="header__top-inner container">
+          <a href="#" class="header__top-location">
+            <span class="icon">
+              <svg width="17px" height="21px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.36 20.76">
+                <g>
+                  <g>
+                    <path fill="currentColor"
+                          d="m8.68,0C3.89,0,0,3.89,0,8.68c0,2.48,2.02,6.25,5.67,10.6.77.92,1.92,1.49,3,1.49s2.23-.57,3-1.49c3.66-4.35,5.67-8.12,5.67-10.6C17.36,3.89,13.46,0,8.68,0Zm7.51,8.68c0,2.17-1.97,5.76-5.4,9.84-.55.65-1.37,1.07-2.11,1.07s-1.56-.42-2.11-1.07C3.14,14.44,1.17,10.85,1.17,8.68,1.17,4.54,4.54,1.17,8.68,1.17s7.51,3.37,7.51,7.51Z" />
+                    <path fill="currentColor"
+                          d="m8.68,5.11c-1.97,0-3.57,1.6-3.57,3.57s1.6,3.57,3.57,3.57,3.57-1.6,3.57-3.57-1.6-3.57-3.57-3.57Zm2.4,3.57c0,1.32-1.07,2.4-2.4,2.4s-2.4-1.07-2.4-2.4,1.07-2.4,2.4-2.4,2.4,1.07,2.4,2.4Z" />
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <span class="label">
+              Краснодар
+            </span>
+          </a>
+          <dialog class="header__top-overlay" data-js-overlay>
+            <nav class="header__top-menu">
+              <ul class="header__top-menu-list">
+                <li class="header__top-menu-item">
+                  <a href="#" class="header__top-menu-link">Оплата и доставка</a>
+                </li>
+                <li class="header__top-menu-item">
+                  <a href="#" class="header__top-menu-link">Гарантия и возврат</a>
+                </li>
+                <li class="header__top-menu-item">
+                  <a href="#" class="header__top-menu-link">Рассрочка и кредит</a>
+                </li>
+                <li class="header__top-menu-item">
+                  <a href="#" class="header__top-menu-link">Сервисный центр</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__top-soc">
+              <a href="#" class="header__top-soc-link">
+                <svg width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.67 18.02">
+                  <g>
+                    <path fill="currentColor"
+                          d="m20.29.26h0c-.3-.25-.71-.33-1.08-.19L.68,7.12c-.55.22-.82.85-.6,1.4.11.29.35.52.65.62l3.91,1.31,2.13,6.09c.1.27.29.49.55.62.26.13.56.14.83.05.13-.04.24-.11.34-.2l2.98-2.51,4.15,3.28c.19.15.42.23.66.23.05,0,.09,0,.14,0,.29-.04.54-.18.72-.41.1-.13.17-.27.2-.43l3.31-15.88c.08-.38-.06-.78-.35-1.04Zm-9.66,13.59l-2.25,1.9.7-3.13,1.55,1.23Zm-2.37-2.3c-.05.16-.18.72-.66,2.9-.07.3-.13.58-.18.8l-1.73-4.96,7.43-3.97c-3.85,4.08-4.65,4.95-4.82,5.16h0s-.02.01-.03.03c-.02.02-.02.03-.02.04h0Zm-7.25-3.25l.05-.2L19.62,1.06s0,.01,0,.01l-3.31,15.88.16.03-.2-.02-6.75-5.33,6.57-6.94c.2-.21.19-.54-.02-.74-.16-.16-.41-.19-.61-.08l-10.47,5.59-3.94-1.32-.05.15h0Z" />
+                  </g>
+                </svg>
+              </a>
+              <a href="#" class="header__top-soc-link">
+                <svg width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 22.18">
+                  <g>
+                    <g>
+                      <path fill="currentColor"
+                            d="m16.97,1.68c-1.76-1.1-3.79-1.68-5.86-1.68h-.01c-2.96,0-5.75,1.15-7.84,3.25C1.16,5.34,0,8.13,0,11.09c0,2.04.56,4.04,1.62,5.78L.06,20.93c-.09.23-.08.48.02.71.1.22.28.4.51.49.11.04.25.06.34.06.11,0,.21-.02.31-.05l4.21-1.5c5.17,3.07,11.89,1.45,15.08-3.67,1.57-2.51,2.06-5.49,1.39-8.37-.67-2.89-2.42-5.34-4.94-6.9ZM.96,21.27h0s0,0,0,0h0Zm18.74-4.83c-2.95,4.74-9.21,6.2-13.96,3.24l-.2-.12-4.56,1.63,1.71-4.43-.13-.2c-1.05-1.63-1.6-3.52-1.6-5.47,0-2.71,1.05-5.25,2.97-7.16,1.91-1.91,4.46-2.97,7.16-2.97h.01c1.89,0,3.75.53,5.35,1.53,2.3,1.43,3.9,3.67,4.51,6.31s.16,5.35-1.27,7.65Z" />
+                      <path fill="currentColor"
+                            d="m16.36,12.47h0s-1.08-.53-1.75-.88c-.7-.36-1.55-.13-2.41.63-.5-.23-.94-.53-1.33-.9-.38-.4-.69-.85-.91-1.34.76-.87.99-1.72.63-2.41-.28-.55-.69-1.37-.83-1.65l-.05-.1c-.16-.31-.47-.51-.82-.51h-.97c-1.53.27-2.62,1.59-2.61,3.13,0,1.56,1.76,4.35,2.92,5.52,1.16,1.16,3.96,2.92,5.51,2.92h.03c1.54,0,2.84-1.09,3.1-2.61v-.97c0-.35-.19-.67-.51-.83Zm-.45,1.67c-.2,1.03-1.09,1.77-2.15,1.77-1.17.01-3.81-1.59-4.86-2.64-1.04-1.04-2.64-3.63-2.64-4.84-.01-1.07.74-1.97,1.78-2.17l.8-.02h0c.09.2.31.65.88,1.77.27.52-.45,1.31-.68,1.54l-.22.22.11.29c.28.72.69,1.38,1.24,1.95.56.54,1.21.95,1.94,1.23l.29.11.22-.22c.23-.23,1.02-.95,1.53-.68.63.33,1.59.8,1.75.88v.82Z" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a href="tel:79995556677" class="header__top-soc-link">
+                +7 (999) 555 66 77
+              </a>
+            </div>
+          </dialog>
+          <button type="button" class="header__top-burger-button burger-button visible-tablet" aria-label="Открыть меню"
+                  title="Открыть меню" data-js-overlay-burger-button>
+            <svg class="burger-button__svg" width="44" height="44" viewBox="0 0 100 100">
+              <path class="burger-button__line burger-button__line--1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058">
+              </path>
+              <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+              <path class="burger-button__line burger-button__line--3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__middle">
+        <div class="header__middle-inner container">
+          <a href="./" class="header__middle-logo">
+            <img src="./assets/images/logo.svg" width="135" height="62" alt="">
+          </a>
+          <form class="header__middle-search">
+            <input type="text" placeholder="Поиск...">
+            <button type="submit">
+              <svg width="23px" height="23px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.03 23.05">
+                <g>
+                  <path fill="currentColor"
+                        d="m22.61,20.56l-4.55-4.55-.25-.25c1.22-1.68,1.95-3.73,1.98-5.86-.06-4.15-2.61-7.82-6.49-9.3C9.47-.85,4.89.38,2.29,3.55-.34,6.76-.78,11.37,1.37,14.97c2.15,3.59,6.33,5.39,10.41,4.66,1.49-.27,2.84-.89,3.99-1.76,1.37,1.37,2.75,2.75,4.12,4.12.22.22.43.43.65.65.54.54,1.53.58,2.07,0,.54-.58.58-1.49,0-2.07ZM4.43,14.27c-1.82-2.25-2.01-5.49-.54-7.96,1.47-2.45,4.4-3.81,7.22-3.29,3.33.61,5.71,3.52,5.75,6.88-.04,2.88-1.81,5.56-4.55,6.55-2.81,1.02-6,.15-7.89-2.18Z" />
+                </g>
+              </svg>
+            </button>
+          </form>
+          <ul class="header__middle-action-list">
+            <li class="header__middle-action-item">
+              <a href="#" class="header__middle-action-link" aria-label="Личный кабинет" title="Личный кабинет">
+                <svg width="16px" height="21px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.35 20.47">
+                  <g>
+                    <g>
+                      <path fill="currentColor"
+                            d="m7.68,10.23c2.83,0,5.12-2.29,5.12-5.12S10.5,0,7.68,0,2.56,2.29,2.56,5.12s2.3,5.12,5.12,5.12Zm0-8.95c2.12,0,3.84,1.73,3.84,3.84s-1.71,3.84-3.84,3.84-3.84-1.73-3.84-3.84,1.73-3.84,3.84-3.84Z" />
+                      <path fill="currentColor"
+                            d="m11.51,12.79H3.84c-2.11,0-3.84,1.73-3.84,3.84v3.84h1.28v-3.84c0-1.41,1.15-2.56,2.56-2.56h7.68c1.42,0,2.56,1.15,2.56,2.56v3.84h1.28v-3.84c0-2.11-1.71-3.84-3.84-3.84Z" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="header__middle-action-item">
+              <a href="#" class="header__middle-action-link" aria-label="Избранное" title="Избранное">
+                <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                  <g>
+                    <path fill="currentColor"
+                          d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="header__middle-action-item">
+              <a href="#" class="header__middle-action-link" aria-label="Корзина" title="Корзина">
+                <svg width="21px" height="21px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.87 20.91">
+                  <g>
+                    <g>
+                      <path fill="currentColor"
+                            d="m6.17,17.16c-1.03,0-1.88.84-1.88,1.88s.84,1.88,1.88,1.88,1.88-.84,1.88-1.88-.84-1.88-1.88-1.88Zm.7,1.88c0,.38-.31.7-.7.7s-.7-.31-.7-.7.31-.7.7-.7.7.31.7.7Z" />
+                      <path fill="currentColor"
+                            d="m14.74,17.16c-1.03,0-1.88.84-1.88,1.88s.84,1.88,1.88,1.88,1.88-.84,1.88-1.88-.84-1.88-1.88-1.88Zm.7,1.88c0,.38-.31.7-.7.7s-.7-.31-.7-.7.31-.7.7-.7.7.31.7.7Z" />
+                      <path fill="currentColor"
+                            d="m3.95,1.99c-.16-1.13-1.14-1.99-2.28-1.99H0v1.18h1.67c.56,0,1.04.42,1.12.97l1.73,12.48c.16,1.13,1.14,1.99,2.28,1.99h10.68v-1.18H6.8c-.56,0-1.04-.42-1.12-.97l-.18-1.28h13.42l1.95-9.76H4.15l-.2-1.44Zm15.49,2.62l-1.48,7.4H5.34l-1.03-7.4h15.12Z" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__bottom-inner container">
+          <nav class="header__bottom-menu">
+            <ul class="header__bottom-menu-list">
+              <li class="header__bottom-menu-item">
+                <a href="#" class="header__bottom-menu-link">
+                  Оборудование
+                </a>
+              </li>
+              <li class="header__bottom-menu-item">
+                <a href="#" class="header__bottom-menu-link">
+                  Посуда и столовые приборы
+                </a>
+              </li>
+              <li class="header__bottom-menu-item">
+                <a href="#" class="header__bottom-menu-link">
+                  Инвентарь
+                </a>
+              </li>
+              <li class="header__bottom-menu-item">
+                <a href="#" class="header__bottom-menu-link">
+                  Мебель
+                </a>
+              </li>
+              <li class="header__bottom-menu-item">
+                <a href="#" class="header__bottom-menu-link">
+                  Оборудование
+                </a>
+              </li>
+              <li class="header__bottom-menu-item">
+                <a href="#" class="header__bottom-menu-link">
+                  Посуда и столовые приборы
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <section class="hero">
+        <div class="hero__inner container">
+          <h1 class="hero__title">
+            СКИДКА -20%
+            <span class="h2">НА ОБОРУДОВАНИЕ</span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="catalog__inner container">
+          <h2 class="catalog__title section-title">Каталог</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item catalog-card">
+              <a href="#" class="catalog-card__image">
+                <img src="./assets/images/product.png" width="209" height="209" alt="">
+              </a>
+              <a href="#" class="catalog-card__title h6">Плита индукционная<br> Luxstahl ПИ 4-98</a>
+              <div class="catalog-card__price">
+                <span class="catalog-card__price-new">152 369 ₽</span>
+                <span class="catalog-card__price-old">168 302 ₽</span>
+                <span class="catalog-card__price-info" aria-label="Информация" title="Информация"></span>
+              </div>
+              <div class="catalog-card__actions">
+                <button type="button" class="catalog-card__to-cart-button button">В корзину</button>
+                <button type="button" class="catalog-card__to-like-button button" aria-label="Добавить в избранное"
+                        title="Добавить в избранное">
+                  <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                    <g>
+                      <path fill="currentColor"
+                            d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item catalog-card">
+              <a href="#" class="catalog-card__image">
+                <img src="./assets/images/product.png" width="209" height="209" alt="">
+              </a>
+              <a href="#" class="catalog-card__title h6">Плита индукционная<br> Luxstahl ПИ 4-98</a>
+              <div class="catalog-card__price">
+                <span class="catalog-card__price-new">152 369 ₽</span>
+                <span class="catalog-card__price-old">168 302 ₽</span>
+                <span class="catalog-card__price-info" aria-label="Информация" title="Информация"></span>
+              </div>
+              <div class="catalog-card__actions">
+                <button type="button" class="catalog-card__to-cart-button button">В корзину</button>
+                <button type="button" class="catalog-card__to-like-button button" aria-label="Добавить в избранное"
+                        title="Добавить в избранное">
+                  <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                    <g>
+                      <path fill="currentColor"
+                            d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item catalog-card">
+              <a href="#" class="catalog-card__image">
+                <img src="./assets/images/product.png" width="209" height="209" alt="">
+              </a>
+              <a href="#" class="catalog-card__title h6">Плита индукционная<br> Luxstahl ПИ 4-98</a>
+              <div class="catalog-card__price">
+                <span class="catalog-card__price-new">152 369 ₽</span>
+                <span class="catalog-card__price-old">168 302 ₽</span>
+                <span class="catalog-card__price-info" aria-label="Информация" title="Информация"></span>
+              </div>
+              <div class="catalog-card__actions">
+                <button type="button" class="catalog-card__to-cart-button button">В корзину</button>
+                <button type="button" class="catalog-card__to-like-button button" aria-label="Добавить в избранное"
+                        title="Добавить в избранное">
+                  <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                    <g>
+                      <path fill="currentColor"
+                            d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item catalog-card">
+              <a href="#" class="catalog-card__image">
+                <img src="./assets/images/product.png" width="209" height="209" alt="">
+              </a>
+              <a href="#" class="catalog-card__title h6">Плита индукционная<br> Luxstahl ПИ 4-98</a>
+              <div class="catalog-card__price">
+                <span class="catalog-card__price-new">152 369 ₽</span>
+                <span class="catalog-card__price-old">168 302 ₽</span>
+                <span class="catalog-card__price-info" aria-label="Информация" title="Информация"></span>
+              </div>
+              <div class="catalog-card__actions">
+                <button type="button" class="catalog-card__to-cart-button button">В корзину</button>
+                <button type="button" class="catalog-card__to-like-button button" aria-label="Добавить в избранное"
+                        title="Добавить в избранное">
+                  <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                    <g>
+                      <path fill="currentColor"
+                            d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item catalog-card">
+              <a href="#" class="catalog-card__image">
+                <img src="./assets/images/product.png" width="209" height="209" alt="">
+              </a>
+              <a href="#" class="catalog-card__title h6">Плита индукционная<br> Luxstahl ПИ 4-98</a>
+              <div class="catalog-card__price">
+                <span class="catalog-card__price-new">152 369 ₽</span>
+                <span class="catalog-card__price-old">168 302 ₽</span>
+                <span class="catalog-card__price-info" aria-label="Информация" title="Информация"></span>
+              </div>
+              <div class="catalog-card__actions">
+                <button type="button" class="catalog-card__to-cart-button button">В корзину</button>
+                <button type="button" class="catalog-card__to-like-button button" aria-label="Добавить в избранное"
+                        title="Добавить в избранное">
+                  <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                    <g>
+                      <path fill="currentColor"
+                            d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item catalog-card">
+              <a href="#" class="catalog-card__image">
+                <img src="./assets/images/product.png" width="209" height="209" alt="">
+              </a>
+              <a href="#" class="catalog-card__title h6">Плита индукционная<br> Luxstahl ПИ 4-98</a>
+              <div class="catalog-card__price">
+                <span class="catalog-card__price-new">152 369 ₽</span>
+                <span class="catalog-card__price-old">168 302 ₽</span>
+                <span class="catalog-card__price-info" aria-label="Информация" title="Информация"></span>
+              </div>
+              <div class="catalog-card__actions">
+                <button type="button" class="catalog-card__to-cart-button button">В корзину</button>
+                <button type="button" class="catalog-card__to-like-button button" aria-label="Добавить в избранное"
+                        title="Добавить в избранное">
+                  <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                    <g>
+                      <path fill="currentColor"
+                            d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item catalog-card">
+              <a href="#" class="catalog-card__image">
+                <img src="./assets/images/product.png" width="209" height="209" alt="">
+              </a>
+              <a href="#" class="catalog-card__title h6">Плита индукционная<br> Luxstahl ПИ 4-98</a>
+              <div class="catalog-card__price">
+                <span class="catalog-card__price-new">152 369 ₽</span>
+                <span class="catalog-card__price-old">168 302 ₽</span>
+                <span class="catalog-card__price-info" aria-label="Информация" title="Информация"></span>
+              </div>
+              <div class="catalog-card__actions">
+                <button type="button" class="catalog-card__to-cart-button button">В корзину</button>
+                <button type="button" class="catalog-card__to-like-button button" aria-label="Добавить в избранное"
+                        title="Добавить в избранное">
+                  <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                    <g>
+                      <path fill="currentColor"
+                            d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item catalog-card">
+              <a href="#" class="catalog-card__image">
+                <img src="./assets/images/product.png" width="209" height="209" alt="">
+              </a>
+              <a href="#" class="catalog-card__title h6">Плита индукционная<br> Luxstahl ПИ 4-98</a>
+              <div class="catalog-card__price">
+                <span class="catalog-card__price-new">152 369 ₽</span>
+                <span class="catalog-card__price-old">168 302 ₽</span>
+                <span class="catalog-card__price-info" aria-label="Информация" title="Информация"></span>
+              </div>
+              <div class="catalog-card__actions">
+                <button type="button" class="catalog-card__to-cart-button button">В корзину</button>
+                <button type="button" class="catalog-card__to-like-button button" aria-label="Добавить в избранное"
+                        title="Добавить в избранное">
+                  <svg width="21px" height="19px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.63 18.91">
+                    <g>
+                      <path fill="currentColor"
+                            d="m15.18,0c-2.01,0-3.92,1.36-4.86,3.43-.94-2.07-2.86-3.43-4.86-3.43C2.44,0,0,2.44,0,5.45c0,5.8,8.31,12.03,9.97,13.22l.34.24.34-.24c1.67-1.19,9.97-7.41,9.97-13.22,0-3-2.44-5.45-5.45-5.45Zm-4.28,6.24v-.16c0-2.57,2.04-4.92,4.28-4.92,2.36,0,4.28,1.92,4.28,4.28,0,3.94-4.91,8.92-9.15,12.02C6.07,14.37,1.17,9.39,1.17,5.45,1.17,3.09,3.09,1.17,5.45,1.17s4.28,2.34,4.28,4.92v.16h1.17Z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__inner container">
+          <div class="about__image">
+            <img src="./assets/images/about.png" width="586" height="388" alt="">
+          </div>
+          <div class="about__body">
+            <h2 class="about__title section-title">О нас</h2>
+            <div class="about__description">
+              <p>
+                Комплексные поставки профессионального оборудования, посуды, инвентаря, мебели
+                и текстиля.
+              </p>
+              <p>
+                Мы проектируем и оснащаем рестораны, бары, кафе, пищевые производства и продуктовые магазины и
+                супермаркеты «под ключ».
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="clients__inner container">
+          <h2 class="clients__title section-title">Клиенты</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <img src="./assets/images/clients/1.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/clients/2.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/clients/3.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/clients/4.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/clients/5.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/clients/6.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/clients/7.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/clients/8.png" width="137" height="137" alt="">
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="clients__inner container">
+          <h2 class="clients__title section-title">ПОСТАВЩИКИ</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <img src="./assets/images/vendors/1.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/vendors/2.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/vendors/3.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/vendors/4.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/vendors/5.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/vendors/6.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/vendors/7.png" width="137" height="137" alt="">
+            </li>
+            <li class="clients__item">
+              <img src="./assets/images/vendors/8.png" width="137" height="137" alt="">
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__top">
+          <nav class="footer__top-menu">
+            <div class="footer__top-menu-title h5">Каталог</div>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Оборудование</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Посуда и столовые приборы</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Инвентарь</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Мебель</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__top-menu">
+            <div class="footer__top-menu-title h5">Покупателям</div>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Акции</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Новости и обзоры</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Рассрочка и кредит</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Оплата и доставка</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Гарантия и возврат</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Сервисный центр</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__top-menu">
+            <div class="footer__top-menu-title h5">О компании</div>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">О нас</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Вакансии</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Контакты</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Обратная связь</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Публичная оферта</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="#" class="footer__top-menu-link">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <a href="./" class="footer__bottom-logo">
+            <img src="./assets/images/logo-white.svg" width="135" height="62" alt="">
+          </a>
+          <div class="footer__bottom-copyright">
+            © 2025 «Техника вкуса».
+            <br>
+            Интернет-магазин оптовой и розничной продажи оборудования, инвентаря,
+            предметов сервировки, посуды и мебели для баров, кафе и ресторанов
+          </div>
+          <div class="footer__bottom-soc">
+            <a href="#" class="footer__bottom-soc-location">
+              <span class="icon">
+                <svg width="17px" height="21px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.36 20.76">
+                  <g>
+                    <g>
+                      <path fill="currentColor"
+                            d="m8.68,0C3.89,0,0,3.89,0,8.68c0,2.48,2.02,6.25,5.67,10.6.77.92,1.92,1.49,3,1.49s2.23-.57,3-1.49c3.66-4.35,5.67-8.12,5.67-10.6C17.36,3.89,13.46,0,8.68,0Zm7.51,8.68c0,2.17-1.97,5.76-5.4,9.84-.55.65-1.37,1.07-2.11,1.07s-1.56-.42-2.11-1.07C3.14,14.44,1.17,10.85,1.17,8.68,1.17,4.54,4.54,1.17,8.68,1.17s7.51,3.37,7.51,7.51Z" />
+                      <path fill="currentColor"
+                            d="m8.68,5.11c-1.97,0-3.57,1.6-3.57,3.57s1.6,3.57,3.57,3.57,3.57-1.6,3.57-3.57-1.6-3.57-3.57-3.57Zm2.4,3.57c0,1.32-1.07,2.4-2.4,2.4s-2.4-1.07-2.4-2.4,1.07-2.4,2.4-2.4,2.4,1.07,2.4,2.4Z" />
+                    </g>
+                  </g>
+                </svg>
+              </span>
+              <span class="label">
+                Краснодар
+              </span>
+            </a>
+            <div class="footer__bottom-soc-list">
+              <a href="#" class="footer__bottom-soc-link">
+                <svg width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.67 18.02">
+                  <g>
+                    <path fill="currentColor"
+                          d="m20.29.26h0c-.3-.25-.71-.33-1.08-.19L.68,7.12c-.55.22-.82.85-.6,1.4.11.29.35.52.65.62l3.91,1.31,2.13,6.09c.1.27.29.49.55.62.26.13.56.14.83.05.13-.04.24-.11.34-.2l2.98-2.51,4.15,3.28c.19.15.42.23.66.23.05,0,.09,0,.14,0,.29-.04.54-.18.72-.41.1-.13.17-.27.2-.43l3.31-15.88c.08-.38-.06-.78-.35-1.04Zm-9.66,13.59l-2.25,1.9.7-3.13,1.55,1.23Zm-2.37-2.3c-.05.16-.18.72-.66,2.9-.07.3-.13.58-.18.8l-1.73-4.96,7.43-3.97c-3.85,4.08-4.65,4.95-4.82,5.16h0s-.02.01-.03.03c-.02.02-.02.03-.02.04h0Zm-7.25-3.25l.05-.2L19.62,1.06s0,.01,0,.01l-3.31,15.88.16.03-.2-.02-6.75-5.33,6.57-6.94c.2-.21.19-.54-.02-.74-.16-.16-.41-.19-.61-.08l-10.47,5.59-3.94-1.32-.05.15h0Z" />
+                  </g>
+                </svg>
+              </a>
+              <a href="#" class="footer__bottom-soc-link">
+                <svg width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 22.18">
+                  <g>
+                    <g>
+                      <path fill="currentColor"
+                            d="m16.97,1.68c-1.76-1.1-3.79-1.68-5.86-1.68h-.01c-2.96,0-5.75,1.15-7.84,3.25C1.16,5.34,0,8.13,0,11.09c0,2.04.56,4.04,1.62,5.78L.06,20.93c-.09.23-.08.48.02.71.1.22.28.4.51.49.11.04.25.06.34.06.11,0,.21-.02.31-.05l4.21-1.5c5.17,3.07,11.89,1.45,15.08-3.67,1.57-2.51,2.06-5.49,1.39-8.37-.67-2.89-2.42-5.34-4.94-6.9ZM.96,21.27h0s0,0,0,0h0Zm18.74-4.83c-2.95,4.74-9.21,6.2-13.96,3.24l-.2-.12-4.56,1.63,1.71-4.43-.13-.2c-1.05-1.63-1.6-3.52-1.6-5.47,0-2.71,1.05-5.25,2.97-7.16,1.91-1.91,4.46-2.97,7.16-2.97h.01c1.89,0,3.75.53,5.35,1.53,2.3,1.43,3.9,3.67,4.51,6.31s.16,5.35-1.27,7.65Z" />
+                      <path fill="currentColor"
+                            d="m16.36,12.47h0s-1.08-.53-1.75-.88c-.7-.36-1.55-.13-2.41.63-.5-.23-.94-.53-1.33-.9-.38-.4-.69-.85-.91-1.34.76-.87.99-1.72.63-2.41-.28-.55-.69-1.37-.83-1.65l-.05-.1c-.16-.31-.47-.51-.82-.51h-.97c-1.53.27-2.62,1.59-2.61,3.13,0,1.56,1.76,4.35,2.92,5.52,1.16,1.16,3.96,2.92,5.51,2.92h.03c1.54,0,2.84-1.09,3.1-2.61v-.97c0-.35-.19-.67-.51-.83Zm-.45,1.67c-.2,1.03-1.09,1.77-2.15,1.77-1.17.01-3.81-1.59-4.86-2.64-1.04-1.04-2.64-3.63-2.64-4.84-.01-1.07.74-1.97,1.78-2.17l.8-.02h0c.09.2.31.65.88,1.77.27.52-.45,1.31-.68,1.54l-.22.22.11.29c.28.72.69,1.38,1.24,1.95.56.54,1.21.95,1.94,1.23l.29.11.22-.22c.23-.23,1.02-.95,1.53-.68.63.33,1.59.8,1.75.88v.82Z" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a href="tel:79995556677" class="footer__bottom-soc-link">
+                +7 (999) 555 66 77
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+
+</html>

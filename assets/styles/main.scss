@@ -1,0 +1,14 @@
+@use "normilize";
+@use "fonts";
+@use "variables";
+@use "utils";
+@use "globals";
+
+@use "blocks/header";
+@use "blocks/burger-button";
+@use "blocks/hero";
+@use "blocks/catalog";
+@use "blocks/catalog-card";
+@use "blocks/about";
+@use "blocks/clients";
+@use "blocks/footer";

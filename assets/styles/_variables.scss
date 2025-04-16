@@ -1,0 +1,40 @@
+@use "helpers" as *;
+
+:root {
+    // colors
+    --color-white: #fff;
+    --color-light: rgb(244, 235, 228);
+    --color-green: rgb(32, 122, 119);
+    --color-green-alt: rgba(32, 122, 119, 0.2);
+    --color-green-alt: rgb(128, 180, 153);
+    --color-orange: rgb(230, 120, 83);
+    --color-black: rgb(0, 0, 0);
+
+    // fonts
+    --font-primary: "Helvetica", sans-serif;
+    --font-size-xxxxl: #{fluid(79, 40)};
+    --font-size-xxxl: #{fluid(45, 26)};
+    --font-size-xxl: #{fluid(26, 20)};
+    --font-size-xl: #{fluid(20, 18)};
+    --font-size-l: #{fluid(18, 16)};
+    --font-size-md: 16px;
+    --font-size-s: 14px;
+
+    // margins
+    --section-padding-y: #{fluid(75, 50)};
+    --container-width: 1150px;
+    --container-padding-x: 16px;
+    --header-height: 52px;
+
+    // borders
+    --radius-l: 11px;
+    --radius-md: 8px;
+    --radius-s: 5px;
+
+    // shadows
+    --shadow: 0px 0px 25px -8px var(--color-green-alt);
+
+    // transitions
+    --transition-duration: 0.2s;
+    --transition-duration-longer: 0.4s;
+}

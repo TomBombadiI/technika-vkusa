@@ -1,0 +1,33 @@
+@use "../helpers" as *;
+
+.hero {
+  background: url("../images/hero-bg.png") center / cover no-repeat;
+  margin-block: var(--section-padding-y);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+  }
+
+  &__inner {
+    padding-block: 160px;
+  }
+
+  &__title {
+    display: grid;
+    justify-items: end;
+    line-height: 1;
+    color: var(--color-white);
+    position: relative;
+
+    @include mobile {
+      justify-items: center;
+    }
+  }
+}

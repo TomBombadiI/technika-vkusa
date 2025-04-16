@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+
+.clients {
+  padding-bottom: var(--section-padding-y);
+
+  &__inner {
+    display: grid;
+    row-gap: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    overflow-y: auto;
+
+    margin-inline: calc(-1 * var(--container-padding-x));
+  }
+
+  &__item {
+    min-width: 122px;
+  }
+}
